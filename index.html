@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pl/en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaMFun Studio - Projects & Testing</title>
+    <style>
+        :root {
+            --primary-color: #1a2a3a;
+            --accent-color: #ffd700; 
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --en-text-color: #666;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.5;
+        }
+
+        header {
+            background-color: #000000; 
+            text-align: center;
+            border-bottom: 4px solid var(--accent-color);
+        }
+
+        .header-banner {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .header-content {
+            background-color: #000000; 
+            color: white;
+            padding: 2.5rem 1rem;
+        }
+
+        header h1 {
+            font-size: calc(2.5rem + 5px); 
+            margin: 0;
+            letter-spacing: 2px;
+            color: #ffffff;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 
+                         0 0 20px rgba(255, 215, 0, 0.5);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 10px 0 20px 0;
+            opacity: 0.9;
+        }
+
+        .support-button {
+            display: inline-flex;
+            align-items: center;
+            background-color: transparent;
+            color: #ffd700;
+            border: 2px solid #ffd700;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .support-button:hover {
+            background-color: #ffd700;
+            color: #000;
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-content h3 {
+            margin: 0 0 1rem 0;
+            color: var(--primary-color);
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+        }
+
+        .lang-pl {
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .lang-en {
+            font-style: italic;
+            color: var(--en-text-color);
+            font-size: 0.95rem;
+            border-top: 1px dashed #eee;
+            padding-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        /* Styl linku do polityki prywatności */
+        .privacy-link {
+            margin-top: auto;
+            font-size: 0.85rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            border-bottom: 1px solid var(--accent-color);
+            transition: color 0.3s;
+        }
+
+        .privacy-link:hover {
+            color: var(--accent-color);
+        }
+
+        .badge-test {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            vertical-align: middle;
+            margin-left: 10px;
+            text-transform: uppercase;
+        }
+
+        .badge-gold {
+            display: inline-block;
+            background: #ffd700;
+            color: #000;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            vertical-align: middle;
+            margin-left: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            background: #eee;
+            margin-top: 4rem;
+            color: #555;
+        }
+
+        .footer-lang-pl {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .footer-lang-en {
+            display: block;
+            font-style: italic;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo_pamfun.png" alt="PaMFun Studio Header" class="header-banner">
+    
+    <div class="header-content">
+        <h1>PaMFun Studio</h1>
+        <p>Portfolio Projektów / Project Portfolio</p>
+        <a href="https://buycoffee.to/pamfunstudio" target="_blank" class="support-button">
+            ☕ Wesprzyj moją twórczość / Support my work
+        </a>
+    </div>
+</header>
+
+<div class="container">
+    <div class="grid">
+        
+        <div class="card">
+            <img src="home_budget.png" alt="Home Budget">
+            <div class="card-content">
+                <h3>Home Budget <span class="badge-gold">Full Version</span></h3>
+                <p class="lang-pl">Intuicyjne narzędzie do zarządzania finansami osobistymi. Pozwala kontrolować wydatki, planować oszczędności i analizować domowy budżet.</p>
+                <p class="lang-en">An intuitive tool for managing personal finances. It allows you to track expenses, plan savings, and analyze your household budget.</p>
+                <a href="https://pamfunstudio.github.io/privacy/privacy.html" target="_blank" class="privacy-link">📄 Privacy Policy / Polityka Prywatności</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="dialog_bridge.png" alt="Dialog Bridge">
+            <div class="card-content">
+                <h3>Dialog Bridge <span class="badge-test">In Tests</span></h3>
+                <p class="lang-pl">Aplikacja ułatwiająca komunikację i przełamywanie barier językowych. Skupia się na płynnej wymianie informacji między użytkownikami.</p>
+                <p class="lang-en">An application that facilitates communication and breaks language barriers. Focused on seamless information exchange between users.</p>
+                <a href="https://pamfunstudio.github.io/privacy/privacydb.html" target="_blank" class="privacy-link">📄 Privacy Policy / Polityka Prywatności</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="notebook.png" alt="Notatnik">
+            <div class="card-content">
+                <h3>Notatnik / Notebook <span class="badge-test">In Tests</span></h3>
+                <p class="lang-pl">Lekki i szybki notatnik cyfrowy. Idealny do zapisywania nagłych pomysłów, list zadań oraz ważnych informacji pod ręką.</p>
+                <p class="lang-en">A lightweight and fast digital notebook. Perfect for capturing sudden ideas, to-do lists, and keeping important info at hand.</p>
+                <a href="https://pamfunstudio.github.io/privacy/privacynotatnik.html" target="_blank" class="privacy-link">📄 Privacy Policy / Polityka Prywatności</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="egg_clicker.png" alt="Egg Clicker">
+            <div class="card-content">
+                <h3>Egg Clicker <span class="badge-test">In Tests</span></h3>
+                <p class="lang-pl">Wciągająca gra typu casual. Prosta mechanika, kolorowa grafika i system progresji zapewniają relaksującą rozrywkę.</p>
+                <p class="lang-en">An addictive casual game. Simple mechanics, colorful graphics, and a progression system provide relaxing entertainment.</p>
+                <a href="https://pamfunstudio.github.io/privacy/privacyegg.html" target="_blank" class="privacy-link">📄 Privacy Policy / Polityka Prywatności</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p><strong>PaMFun Studio &copy; 2026</strong></p>
+    <p>Contact: wargohdenhan@gmail.com</p>
+    <hr style="width: 50px; margin: 15px auto; border: 0; border-top: 1px solid #ccc;">
+    <span class="footer-lang-pl">Wszystkie aplikacje i gry są w fazie testów w Google Play lub są już w fazie produkcji i są dostępne w sklepie.</span>
+    <span class="footer-lang-en">All applications and games are tested in Google Play or are already in the production phase and available in the store.</span>
+</footer>
+
+</body>
+</html>
