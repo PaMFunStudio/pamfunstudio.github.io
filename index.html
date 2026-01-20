@@ -100,11 +100,18 @@
         }
 
         .card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-            border-bottom: 1px solid #eee;
-        }
+    width: 100%;
+    height: 220px;
+    /* Gwarantuje, że całe PNG zmieści się w ramce bez ucinania krawędzi */
+    object-fit: contain;
+    /* Zapobiega rozmyciu małych ikon przy powiększaniu */
+    image-rendering: auto; 
+    /* Padding sprawi, że PNG nie będzie dotykać krawędzi ramki (wygląda to czyściej) */
+    padding: 15px; 
+    box-sizing: border-box;
+    border-bottom: 1px solid #eee;
+}
+
 
         .card-content {
             padding: 1.5rem;
