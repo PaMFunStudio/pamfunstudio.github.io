@@ -202,6 +202,63 @@
             font-style: italic;
             font-size: 0.85rem;
         }
+
+
+                .play-store-btn {
+            display: inline-block;
+            background-color: #000000;
+            color: #ffffff !important;
+            text-decoration: none !important;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: all 0.3s ease;
+            margin: 15px 0;
+            border: 2px solid #000000;
+            text-align: center;
+            align-self: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .play-store-btn:hover {
+            background-color: transparent;
+            color: #000000 !important;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+
+        .privacy-btn {
+            display: inline-block;
+            background-color: transparent;
+            color: #666 !important; /* Dyskretniejszy kolor tekstu */
+            text-decoration: none !important;
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 0.75rem; /* Nieco mniejszy niż główny przycisk */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            margin: 5px 0;
+            border: 1px solid #ddd; /* Delikatna ramka */
+            text-align: center;
+            align-self: center;
+        }
+
+        .privacy-btn:hover {
+            border-color: var(--accent-color); /* Zmienia kolor na żółty */
+            color: var(--primary-color) !important;
+            background-color: rgba(255, 215, 0, 0.05); /* Bardzo delikatne żółte tło */
+            transform: translateY(-1px);
+        }
+
+
+
+
     </style>
 </head>
 <body>
@@ -221,15 +278,39 @@
 <div class="container">
     <div class="grid">
         
+
+<div style="width: 100%; grid-column: 1 / -1; text-align: center; margin: 40px 0 20px 0;">
+    <h3 style="color: var(--primary-color); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px;">Aplikacje / Applications</h3>
+    <div style="height: 8px; width: 150px; background: var(--accent-color); margin: 0 auto;"></div>
+</div>
+
+
+
+
+
         <div class="card">
             <img src="home_budget.png" alt="Home Budget">
             <div class="card-content">
                 <h3>Home Budget <span class="badge-gold">Full Version</span></h3>
                 <p class="lang-pl">Intuicyjne narzędzie do zarządzania finansami osobistymi. Pozwala kontrolować wydatki, planować oszczędności i analizować domowy budżet.</p>
                 <p class="lang-en">An intuitive tool for managing personal finances. It allows you to track expenses, plan savings, and analyze your household budget.</p>
-              <a href="https://play.google.com/store/apps/details?id=com.pamfunstudio.homebudget" class="privacy-link" style="text-align: center;"> App Home Budget </a>
-                <a href="https://pamfunstudio.github.io/privacy/privacy.html" target="_blank" class="privacy-link">📄 Privacy Policy / Polityka Prywatności</a>
-            </div>
+<div style="margin: 15px 0; display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; justify-content: center;">
+    <a href="hb1.jpg" target="_blank"><img src="hb1.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="hb2.jpg" target="_blank"><img src="hb2.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="hb3.jpg" target="_blank"><img src="hb3.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="hb4.jpg" target="_blank"><img src="hb4.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+
+</div>
+
+              <a href="https://play.google.com/store/apps/details?id=com.pamfunstudio.homebudget" target="_blank" class="play-store-btn">
+    Google Play
+</a>
+
+
+<a href="https://pamfunstudio.github.io/privacy/privacy.html" target="_blank" class="privacy-btn">
+    📄 Privacy Policy / Polityka Prywatności
+</a>
+    </div>
         </div>
 
         <div class="card">
@@ -238,10 +319,24 @@
                 <h3>Dialog Bridge <span class="badge-gold">Full Version</span></h3>
                 <p class="lang-pl">Aplikacja ułatwiająca komunikację i przełamywanie barier językowych. Skupia się na płynnej wymianie informacji między użytkownikami.</p>
                 <p class="lang-en">An application that facilitates communication and breaks language barriers. Focused on seamless information exchange between users.</p>
-               <a href="https://play.google.com/store/apps/details?id=com.pamfunstudio.dialogbridge" class="privacy-link" style="text-align: center;"> App Dialog Bridge </a> 
-                <a href="https://pamfunstudio.github.io/privacy/privacydb.html" target="_blank" class="privacy-link">📄 Privacy Policy / Polityka Prywatności</a>
+<div style="margin: 15px 0; display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; justify-content: center;">
+    <a href="db1.jpg" target="_blank"><img src="db1.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="db2.jpg" target="_blank"><img src="db2.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="db3.jpg" target="_blank"><img src="db3.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="db4.jpg" target="_blank"><img src="db4.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+
+</div>
+
+
+      <a href="https://play.google.com/store/apps/details?id=com.pamfunstudio.dialogbridge" target="_blank" class="play-store-btn">
+    Google Play
+</a>  
+                <a href="https://pamfunstudio.github.io/privacy/privacydb.html" target="_blank" class="privacy-btn">📄 Privacy Policy / Polityka Prywatności</a>
             </div>
         </div>  
+
+
+
 
         <div class="card">
             <img src="notebook.png" alt="Notatnik">
@@ -249,20 +344,24 @@
                 <h3>Notatnik / Notebook <span class="badge-gold">Full Version</span></h3>
                 <p class="lang-pl">Lekki i szybki notatnik cyfrowy. Idealny do zapisywania nagłych pomysłów, list zadań oraz ważnych informacji pod ręką.</p>
                 <p class="lang-en">A lightweight and fast digital notebook. Perfect for capturing sudden ideas, to-do lists, and keeping important info at hand.</p>
-                <a href="https://play.google.com/store/apps/details?id=com.pamfunstudio.notatnik" class="privacy-link" style="text-align: center;"> App Notatnik / Notepad </a>
-                <a href="https://pamfunstudio.github.io/privacy/privacynotatnik.html" target="_blank" class="privacy-link">📄 Privacy Policy / Polityka Prywatności</a>
+<div style="margin: 15px 0; display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; justify-content: center;">
+    <a href="note1.jpg" target="_blank"><img src="note1.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="note2.jpg" target="_blank"><img src="note2.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="note3.jpg" target="_blank"><img src="note3.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="note4.jpg" target="_blank"><img src="note4.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+
+</div>
+
+
+
+      <a href="https://play.google.com/store/apps/details?id=com.pamfunstudio.notatnik" target="_blank" class="play-store-btn">
+    Google Play
+</a>
+                <a href="https://pamfunstudio.github.io/privacy/privacynotatnik.html" target="_blank" class="privacy-btn">📄 Privacy Policy / Polityka Prywatności</a>
             </div>
         </div>
 
-        <div class="card">
-            <img src="egg_clicker.png" alt="Egg Clicker">
-            <div class="card-content">
-                <h3>Egg Clicker <span class="badge-test">In Tests</span></h3>
-                <p class="lang-pl">Wciągająca gra typu casual. Prosta mechanika, kolorowa grafika i system progresji zapewniają relaksującą rozrywkę.</p>
-                <p class="lang-en">An addictive casual game. Simple mechanics, colorful graphics, and a progression system provide relaxing entertainment.</p>
-                <a href="https://pamfunstudio.github.io/privacy/privacyegg.html" target="_blank" class="privacy-link">📄 Privacy Policy / Polityka Prywatności</a>
-            </div>
-        </div>
+        
 
          <div class="card">
             <img src="pe3000.png" alt="PhotoEdytor3000">
@@ -270,7 +369,15 @@
                 <h3>PhotoEdytor3000<span class="badge-test">In Tests</span></h3>
                 <p class="lang-pl">To proste i potężne narzędzie stworzone do błyskawicznej edycji zdjęć. Zapomnij o skomplikowanych programach – tutaj dopasujesz swoje zdjęcie do idealnego formatu w kilka sekund.</p>
                 <p class="lang-en">This simple yet powerful tool is designed for lightning-fast photo editing. Forget complicated programs – here you can adjust your photos to the perfect size in seconds.</p>
-                <a href="https://pamfunstudio.github.io/privacy/privacype3000.html" target="_blank" class="privacy-link">📄 Privacy Policy / Polityka Prywatności</a>
+<div style="margin: 15px 0; display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; justify-content: center;">
+    <a href="pe1.jpg" target="_blank"><img src="pe1.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="pe2.jpg" target="_blank"><img src="pe2.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="pe3.jpg" target="_blank"><img src="pe3.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="pe4.jpg" target="_blank"><img src="pe4.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+
+</div>
+
+                <a href="https://pamfunstudio.github.io/privacy/privacype3000.html" target="_blank" class="privacy-btn">📄 Privacy Policy / Polityka Prywatności</a>
             </div>
         </div>
 
@@ -280,27 +387,34 @@
                 <h3>FreeGraffa<span class="badge-test">In Tests</span></h3>
                 <p class="lang-pl">To proste i potężne narzędzie stworzone do błyskawicznego odkrywania pięknych treści. Zapomnij o nudnych galeriach – tutaj znajdziesz i pobierzesz idealną grafikę lub wideo na swój telefon w kilka sekund.</p>
                 <p class="lang-en">This simple yet powerful tool is designed for lightning-fast content discovery. Forget boring galleries – here you can find and download the perfect graphic or video for your phone in seconds.</p>
-                <a href="https://pamfunstudio.github.io/privacy/privacygraffa.html" target="_blank" class="privacy-link">📄 Privacy Policy / Polityka Prywatności</a>
+<div style="margin: 15px 0; display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; justify-content: center;">
+    <a href="fg1.jpg" target="_blank"><img src="fg1.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="fg2.jpg" target="_blank"><img src="fg2.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="fg3.jpg" target="_blank"><img src="fg3.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="fg4.jpg" target="_blank"><img src="fg4.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+
+</div>
+
+                <a href="https://pamfunstudio.github.io/privacy/privacygraffa.html" target="_blank" class="privacy-btn">📄 Privacy Policy / Polityka Prywatności</a>
             </div>
         </div>
 
-        <div class="card">
-            <img src="wop.png" alt="Walka o Papier">
-            <div class="card-content">
-                <h3>Walka o Papier<span class="badge-test">In Tests</span></h3>
-                <p class="lang-pl">To szalona i wciągająca gra zręcznościowa, w której liczy się każda sekunda. Stań do walki o ostatnią rolkę papieru, pokonaj 100 unikalnych przeciwników i zdobywaj prestiżowe złote trofea, które potwierdzą Twój status mistrza marketu.</p>
-                <p class="lang-en">A wild and addictive arcade game where every second counts. Fight for the last roll of toilet paper, defeat 100 unique opponents, and collect prestigious gold trophies to prove you are the ultimate master of the market..</p>
-                <a href="https://pamfunstudio.github.io/privacy/privacywop.html" target="_blank" class="privacy-link">📄 Privacy Policy / Polityka Prywatności</a>
-            </div>
-        </div>
 
- <div class="card">
+<div class="card">
             <img src="videocut.png" alt="PaMVideoCut Pro">
             <div class="card-content">
                 <h3>PaMVideoCut Pro<span class="badge-test">In Tests</span></h3>
                 <p class="lang-pl">To profesjonalne, a zarazem intuicyjne narzędzie do błyskawicznego montażu wideo. Zapomnij o skomplikowanych edytorach – tutaj w kilka sekund przytniesz klipy, dodasz przejścia i wyeksportujesz swój film w idealnej jakości.</p>
                 <p class="lang-en">This professional yet intuitive tool is designed for lightning-fast video editing. Forget complicated editors – here you can trim clips, add transitions, and export your video in perfect quality in just seconds.</p>
-                <a href="https://pamfunstudio.github.io/privacy/privacyvideocut.html" target="_blank" class="privacy-link">📄 Privacy Policy / Polityka Prywatności</a>
+<div style="margin: 15px 0; display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; justify-content: center;">
+    <a href="vc1.jpg" target="_blank"><img src="vc1.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="vc2.jpg" target="_blank"><img src="vc2.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="vc3.jpg" target="_blank"><img src="vc3.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="vc4.jpg" target="_blank"><img src="vc4.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+
+</div>
+
+                <a href="https://pamfunstudio.github.io/privacy/privacyvideocut.html" target="_blank" class="privacy-btn">📄 Privacy Policy / Polityka Prywatności</a>
             </div>
         </div>
 
@@ -310,17 +424,15 @@
                 <h3>PaMAudioCut Pro<span class="badge-test">In Tests</span></h3>
                 <p class="lang-pl">To nowoczesne i szybkie narzędzie do precyzyjnej edycji plików dźwiękowych. Zapomnij o skomplikowanych edytorach audio – tutaj błyskawicznie wytniesz ulubiony fragment, odwrócisz nagranie lub zmienisz jakość pliku MP3 w kilka sekund.</p>
                 <p class="lang-en">This modern and fast tool is designed for precise audio editing. Forget complicated audio software – here you can instantly trim your favorite parts, reverse recordings, or adjust MP3 quality in just a few seconds.</p>
-                <a href="https://pamfunstudio.github.io/privacy/privacyaudiocut.html" target="_blank" class="privacy-link">📄 Privacy Policy / Polityka Prywatności</a>
-            </div>
-        </div>
+<div style="margin: 15px 0; display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; justify-content: center;">
+    <a href="ac1.jpg" target="_blank"><img src="ac1.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="ac2.jpg" target="_blank"><img src="ac2.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="ac3.jpg" target="_blank"><img src="ac3.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="ac4.jpg" target="_blank"><img src="ac4.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
 
- <div class="card">
-            <img src="smok.png" alt="Smokgotchi">
-            <div class="card-content">
-                <h3>Smokgotchi<span class="badge-test">In Tests</span></h3>
-                <p class="lang-pl">To rozbudowany symulator wirtualnego smoka, w którym dbasz o statystyki podopiecznego, takie jak głód, szczęście, czystość i energia. Gra oferuje zaawansowany system RPG, pozwalający na zdobywanie poziomów doświadczenia, wysyłanie smoka na wyprawy oraz przeprowadzanie treningów z losowymi zdarzeniami.I wiele więcej...</p>
-                <p class="lang-en">This is a comprehensive simulator where you manage your dragon's core stats, including hunger, happiness, purity, and energy. The game features an advanced RPG system, allowing you to level up, embark on timed expeditions, and conduct training sessions with randomized outcomes. And much more...</p>
-                <a href="https://pamfunstudio.github.io/privacy/privacysmok.html" target="_blank" class="privacy-link">📄 Privacy Policy / Polityka Prywatności</a>
+</div>
+
+                <a href="https://pamfunstudio.github.io/privacy/privacyaudiocut.html" target="_blank" class="privacy-btn">📄 Privacy Policy / Polityka Prywatności</a>
             </div>
         </div>
 
@@ -331,11 +443,93 @@
         <h3>PaMCompressor<span class="badge-test">In Tests</span></h3>
         <p class="lang-pl">Narzędzie do szybkiej i wydajnej kompresji wideo oparte na silniku FFmpeg. Pozwala zmniejszyć rozmiar plików bez widocznej utraty jakości, oferując trzy tryby pracy: szybki, zbalansowany oraz maksymalną kompresję. Idealne do oszczędzania miejsca w pamięci telefonu i łatwego udostępniania mediów.</p>
         <p class="lang-en">A powerful video compression tool powered by the FFmpeg engine. It allows you to reduce file size without losing quality, offering three modes: fast, balanced, and maximum compression. Perfect for saving storage space and easy media sharing.</p>
-        <a href="https://pamfunstudio.github.io/privacy/privacycompressor.html" target="_blank" class="privacy-link">📄 Privacy Policy / Polityka Prywatności</a>
+<div style="margin: 15px 0; display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; justify-content: center;">
+    <a href="comp1.jpg" target="_blank"><img src="comp1.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="comp2.jpg" target="_blank"><img src="comp2.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="comp3.jpg" target="_blank"><img src="comp3.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="comp4.jpg" target="_blank"><img src="comp4.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+
+</div>
+
+
+        <a href="https://pamfunstudio.github.io/privacy/privacycompressor.html" target="_blank" class="privacy-btn">📄 Privacy Policy / Polityka Prywatności</a>
     </div>
 </div>
 
         
+
+
+
+
+
+
+
+<div style="width: 100%; grid-column: 1 / -1; text-align: center; margin: 40px 0 20px 0;">
+    <h3 style="color: var(--primary-color); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 1px;">Gry / Games</h3>
+    <div style="height: 3px; width: 60px; background: var(--accent-color); margin: 0 auto;"></div>
+</div>
+
+
+
+
+        <div class="card">
+            <img src="wop.png" alt="Walka o Papier">
+            <div class="card-content">
+                <h3>Walka o Papier<span class="badge-test">In Tests</span></h3>
+                <p class="lang-pl">To szalona i wciągająca gra zręcznościowa, w której liczy się każda sekunda. Stań do walki o ostatnią rolkę papieru, pokonaj 100 unikalnych przeciwników i zdobywaj prestiżowe złote trofea, które potwierdzą Twój status mistrza marketu.</p>
+                <p class="lang-en">A wild and addictive arcade game where every second counts. Fight for the last roll of toilet paper, defeat 100 unique opponents, and collect prestigious gold trophies to prove you are the ultimate master of the market..</p>
+<div style="margin: 15px 0; display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; justify-content: center;">
+    <a href="wp1.jpg" target="_blank"><img src="wp1.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="wp2.jpg" target="_blank"><img src="wp2.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="wp3.jpg" target="_blank"><img src="wp3.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="wp4.jpg" target="_blank"><img src="wp4.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+
+</div>
+
+                <a href="https://pamfunstudio.github.io/privacy/privacywop.html" target="_blank" class="privacy-btn">📄 Privacy Policy / Polityka Prywatności</a>
+            </div>
+        </div>
+
+
+<div class="card">
+            <img src="egg_clicker.png" alt="Egg Clicker">
+            <div class="card-content">
+                <h3>Egg Clicker <span class="badge-test">In Tests</span></h3>
+                <p class="lang-pl">Wciągająca gra typu casual. Prosta mechanika, kolorowa grafika i system progresji zapewniają relaksującą rozrywkę.</p>
+                <p class="lang-en">An addictive casual game. Simple mechanics, colorful graphics, and a progression system provide relaxing entertainment.</p>
+<div style="margin: 15px 0; display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; justify-content: center;">
+    <a href="eg1.jpg" target="_blank"><img src="eg1.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="eg2.jpg" target="_blank"><img src="eg2.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="eg3.jpg" target="_blank"><img src="eg3.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="eg4.jpg" target="_blank"><img src="eg4.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+
+</div>
+
+                <a href="https://pamfunstudio.github.io/privacy/privacyegg.html" target="_blank" class="privacy-btn">📄 Privacy Policy / Polityka Prywatności</a>
+            </div>
+        </div>
+
+
+ <div class="card">
+            <img src="smok.png" alt="Smokgotchi">
+            <div class="card-content">
+                <h3>Smokgotchi<span class="badge-test">In Tests</span></h3>
+                <p class="lang-pl">To rozbudowany symulator wirtualnego smoka, w którym dbasz o statystyki podopiecznego, takie jak głód, szczęście, czystość i energia. Gra oferuje zaawansowany system RPG, pozwalający na zdobywanie poziomów doświadczenia, wysyłanie smoka na wyprawy oraz przeprowadzanie treningów z losowymi zdarzeniami.I wiele więcej...</p>
+                <p class="lang-en">This is a comprehensive simulator where you manage your dragon's core stats, including hunger, happiness, purity, and energy. The game features an advanced RPG system, allowing you to level up, embark on timed expeditions, and conduct training sessions with randomized outcomes. And much more...</p>
+<div style="margin: 15px 0; display: flex; gap: 10px; overflow-x: auto; padding-bottom: 5px; justify-content: center;">
+    <a href="sm1.jpg" target="_blank"><img src="sm1.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="sm2.jpg" target="_blank"><img src="sm2.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="sm3.jpg" target="_blank"><img src="sm3.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+    <a href="sm4.jpg" target="_blank"><img src="sm4.jpg" style="height: 120px; width: auto; border: 1px solid #ddd; border-radius: 4px; padding: 2px;"></a>
+
+</div>
+
+                <a href="https://pamfunstudio.github.io/privacy/privacysmok.html" target="_blank" class="privacy-btn">📄 Privacy Policy / Polityka Prywatności</a>
+            </div>
+        </div>
+
+
+
 
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5864102311359154"
